@@ -50,12 +50,6 @@ if ((strpos($r1, 'rate_limit')) || (strpos($r1, 'rate_limit'))){
   <br>RESPONSE:  RATE LIMIT ⚠️
   <br>BALANCE: $balance
   <br>CURRENCY: $curr</b>";
-  $tg2 =
-  "✅ SK LIVE
-#LIVE : <code>".$sk."</code>
-RESPONSE : RATE LIMIT ⚠️
-BALANCE : $balance 
-CURRENCY : $curr";
 }
   elseif ((strpos($r1, 'tok_')) || (strpos($r1, 'tok'))){
     echo "<b>#LIVE : $sk
