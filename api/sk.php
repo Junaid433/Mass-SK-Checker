@@ -56,6 +56,7 @@ if ((strpos($r1, 'rate_limit')) || (strpos($r1, 'rate_limit'))){
   <br>RESPONSE: VALID LIVE SK KEY✅
   <br>BALANCE: $balance
   <br>CURRENCY: $curr</b>";
+  }
 elseif(strpos($r1, "api_key_expired" )) {
   echo "<b>DEAD : $sk
   <br>RESPONSE: API KEY REVOKED ❌</b>";
