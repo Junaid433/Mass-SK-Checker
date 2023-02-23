@@ -52,7 +52,7 @@ function hyper_decode($sk)
 
   return $decryption;
 }
-function GetStr($string, $start, $end)
+function getStr($string, $start, $end)
 {
   $string = ' ' . $string;
   $ini = strpos($string, $start);
