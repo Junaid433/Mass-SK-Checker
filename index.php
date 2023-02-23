@@ -1,4 +1,4 @@
 <?php
-header("Location: sk/V2/index.php");
+header("Location: ./V2/index.php");
 exit();
 ?>
