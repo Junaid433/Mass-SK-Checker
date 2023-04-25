@@ -103,7 +103,7 @@ $(document).ready(() => {
                         }
                     })
                 }, 2e2 * i)
-            }) : window.location.replace("./checker?limit=reached&recheck=true") : notify.error("Please add a cc!", "", {
+            }) : window.location.replace("./index.php?limit=reached&recheck=true") : notify.error("Please add a cc!", "", {
                 duration: 5e3
             })
         }()
