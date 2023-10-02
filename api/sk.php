@@ -33,12 +33,8 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_USERPWD, $sk. ':' . '');
 $r2 = curl_exec($ch);
 $curr = Getstr($r2,'"currency": "','"');
-$balance = trim(strip_tags(getStr($r2,'{
-  "object": "balance",
-  "available": [
-    {
-      "amount":',',')));
-      $pending = trim(strip_tags(getStr($r2,'"livemode": true,
+$balance = trim(strip_tags(getStr($r2,'"amount":',',')));
+$pending = trim(strip_tags(getStr($r2,'"livemode": true,
       "pending": [
         {
           "amount":',',')));
